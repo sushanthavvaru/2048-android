@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fffff0"
+    tools:context="com.example.sushanth.play2048.MainActivity">
+
+
+    <Button
+        android:text="@string/newgame"
+        android:layout_width="80dp"
+        android:id="@+id/newgame"
+        android:textColor="#FFF"
+        android:background="#ff9e3e"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignEnd="@+id/score"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="@string/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView3"
+        android:textColor="#884400"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:id="@+id/instructions"
+        android:textColor="#FFF"
+        android:background="#ff9e3e"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/best"
+        android:text="@string/instructions" />
+
+    <com.example.sushanth.play2048.Gamebox
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/bestscore"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="#c2c2a3"
+        android:textColor="#FFF"
+        android:gravity="center_horizontal"
+        android:id="@+id/best"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/gamename"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button"
+        android:background="#00FF00"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/score"
+        android:layout_height="50dp"
+        android:id="@+id/score"
+        android:background="#c2c2a3"
+        android:textColor="#FFF"
+        android:gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#884400"
+        android:id="@+id/textView8" />
+</RelativeLayout>
