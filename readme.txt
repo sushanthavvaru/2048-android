@@ -1,5 +1,4 @@
 2048 by Sushanth Avvaru
-RedID: 819693674
 
 Application is a math game. When you swipe on the big box. The numbers get added in the direction of swipe. Keeping playing until
 you reach 2048 number tile. The application is created using onDraw method of Activity and canvas. Further improvements that can 
